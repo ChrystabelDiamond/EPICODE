@@ -1,0 +1,31 @@
+Ethernet: È un tipo di connessione a cavo comunemente utilizzata per connettere dispositivi come computer, stampanti e switch all'interno di una rete locale. È come un filo che collega i dispositivi per consentire loro di comunicare tra loro.
+
+Wi-Fi: È un tipo di connessione senza fili che consente ai dispositivi di comunicare tra loro tramite onde radio anziché cavi. È ciò che permette ai dispositivi come smartphone, laptop e tablet di connettersi a Internet senza l'uso di cavi.
+
+PPP: È un protocollo che permette di stabilire una connessione diretta tra due computer. Viene spesso utilizzato per le connessioni dial-up e per connettersi a Internet tramite una linea telefonica.
+
+Frame Relay: È un protocollo utilizzato per la trasmissione dei dati attraverso reti a lunga distanza. Funziona suddividendo i dati in piccoli "frame" e inviandoli attraverso la rete.
+
+ATM: È un protocollo utilizzato per reti ad alta velocità. Divide i dati in piccole unità chiamate "celle" e le invia attraverso la rete.
+
+HDLC: È un protocollo che permette a dispositivi di rete diversi di comunicare tra loro. Fornisce un modo per controllare e organizzare la trasmissione dei dati.
+
+SLIP: È un protocollo utilizzato per inviare pacchetti di dati attraverso una connessione seriale, come una connessione via cavo.
+
+Token ring: i dispositivi di rete sono collegati a un anello logico, che rappresenta il percorso circolare dei dati attraverso la rete.
+
+PPPoE: È un modo per connettersi a Internet attraverso una connessione via cavo o DSL. È come un tunnel che trasporta i dati tra il tuo computer e il provider di servizi Internet.
+
+MAC: È come una regola per l'accesso equo al canale di comunicazione. Assicura che tutti i dispositivi abbiano la possibilità di inviare i loro dati senza creare problemi.
+
+CSMA/CD: È una tecnica utilizzata nelle reti Ethernet per evitare che i dati inviati da diversi computer si scontrino. Funziona come un sistema di "scusa e riprova" per garantire una comunicazione senza collisioni.
+
+Token Bus: È un modo per controllare chi può parlare in una rete. Funziona come un oggetto speciale (il "token") che viene passato di mano in mano. Solo la persona che tiene il token può parlare.
+
+IEEE 802.11 (Wi-Fi): È un insieme di regole per la comunicazione senza fili tra dispositivi come telefoni o computer portatili. È come un linguaggio comune che consente ai dispositivi di capirsi e scambiarsi dati senza fili.
+
+Bluetooth: È un tipo di connessione wireless che consente ai dispositivi come auricolari, altoparlanti o tastiere di comunicare tra loro a breve distanza, come un collegamento senza fili tra due telefoni cellulari.
+
+IEEE 802.15.4 (Zigbee): È uno standard per reti di sensori wireless a bassa potenza e a corto raggio. Funziona come un protocollo di comunicazione per dispositivi come sensori ambientali, interruttori intelligenti e dispositivi di monitoraggio.
+
+InfiniBand: È un protocollo utilizzato nelle reti ad alta velocità, come i cluster di server. Funziona come un'infrastruttura per la comunicazione ad alta velocità tra i componenti del sistema.
