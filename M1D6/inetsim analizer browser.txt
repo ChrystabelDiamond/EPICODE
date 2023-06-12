@@ -1,0 +1,11 @@
+No.     Time           Source                Destination           Protocol Length Info
+      5 210.810510873  192.168.50.102        192.168.50.255        BROWSER  251    Domain/Workgroup Announcement WORKGROUP, NT Workstation, Domain Enum
+
+Frame 5: 251 bytes on wire (2008 bits), 251 bytes captured (2008 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 192.168.50.102, Dst: 192.168.50.255
+User Datagram Protocol, Src Port: 138, Dst Port: 138
+NetBIOS Datagram Service
+SMB (Server Message Block Protocol)
+SMB MailSlot Protocol
+Microsoft Windows Browser Protocol

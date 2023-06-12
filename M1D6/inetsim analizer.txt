@@ -1,0 +1,114 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    fe80::7d57:907b:118:e548 ff02::1:2             DHCPv6   150    Solicit XID: 0x20dad0 CID: 000100012c03297e0800272ee327 
+
+Frame 1: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27), Dst: IPv6mcast_01:00:02 (33:33:00:01:00:02)
+Internet Protocol Version 6, Src: fe80::7d57:907b:118:e548, Dst: ff02::1:2
+User Datagram Protocol, Src Port: 546, Dst Port: 547
+DHCPv6
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 16.007107720   fe80::7d57:907b:118:e548 ff02::1:2             DHCPv6   150    Solicit XID: 0x20dad0 CID: 000100012c03297e0800272ee327 
+
+Frame 2: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27), Dst: IPv6mcast_01:00:02 (33:33:00:01:00:02)
+Internet Protocol Version 6, Src: fe80::7d57:907b:118:e548, Dst: ff02::1:2
+User Datagram Protocol, Src Port: 546, Dst Port: 547
+DHCPv6
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 16.948533920   192.168.50.102        192.168.50.255        BROWSER  243    Local Master Announcement WINDOWS7, Workstation, Server, NT Workstation, Potential Browser, Master Browser
+
+Frame 3: 243 bytes on wire (1944 bits), 243 bytes captured (1944 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 192.168.50.102, Dst: 192.168.50.255
+User Datagram Protocol, Src Port: 138, Dst Port: 138
+NetBIOS Datagram Service
+SMB (Server Message Block Protocol)
+SMB MailSlot Protocol
+Microsoft Windows Browser Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 48.023218728   fe80::7d57:907b:118:e548 ff02::1:2             DHCPv6   150    Solicit XID: 0x20dad0 CID: 000100012c03297e0800272ee327 
+
+Frame 4: 150 bytes on wire (1200 bits), 150 bytes captured (1200 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27), Dst: IPv6mcast_01:00:02 (33:33:00:01:00:02)
+Internet Protocol Version 6, Src: fe80::7d57:907b:118:e548, Dst: ff02::1:2
+User Datagram Protocol, Src Port: 546, Dst Port: 547
+DHCPv6
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 210.810510873  192.168.50.102        192.168.50.255        BROWSER  251    Domain/Workgroup Announcement WORKGROUP, NT Workstation, Domain Enum
+
+Frame 5: 251 bytes on wire (2008 bits), 251 bytes captured (2008 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 192.168.50.102, Dst: 192.168.50.255
+User Datagram Protocol, Src Port: 138, Dst Port: 138
+NetBIOS Datagram Service
+SMB (Server Message Block Protocol)
+SMB MailSlot Protocol
+Microsoft Windows Browser Protocol
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 277.500167665  192.168.50.100        192.168.50.255        NBNS     92     Name query NB WORKGROUP<1d>
+
+Frame 6: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Internet Protocol Version 4, Src: 192.168.50.100, Dst: 192.168.50.255
+User Datagram Protocol, Src Port: 60017, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 277.501023056  PcsCompu_2e:e3:27     Broadcast             ARP      60     Who has 192.168.50.100? Tell 192.168.50.102
+
+Frame 7: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 277.501030180  PcsCompu_c7:e1:36     PcsCompu_2e:e3:27     ARP      42     192.168.50.100 is at 08:00:27:c7:e1:36
+
+Frame 8: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27)
+Address Resolution Protocol (reply)
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 277.501344307  192.168.50.102        192.168.50.100        NBNS     104    Name query response NB 192.168.50.102
+
+Frame 9: 104 bytes on wire (832 bits), 104 bytes captured (832 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27), Dst: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+Internet Protocol Version 4, Src: 192.168.50.102, Dst: 192.168.50.100
+User Datagram Protocol, Src Port: 137, Dst Port: 60017
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 277.501523679  192.168.50.100        192.168.50.102        NBNS     92     Name query NBSTAT WORKGROUP<00>
+
+Frame 10: 92 bytes on wire (736 bits), 92 bytes captured (736 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27)
+Internet Protocol Version 4, Src: 192.168.50.100, Dst: 192.168.50.102
+User Datagram Protocol, Src Port: 59182, Dst Port: 137
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 277.502127407  192.168.50.102        192.168.50.100        NBNS     253    Name query response NBSTAT
+
+Frame 11: 253 bytes on wire (2024 bits), 253 bytes captured (2024 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27), Dst: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+Internet Protocol Version 4, Src: 192.168.50.102, Dst: 192.168.50.100
+User Datagram Protocol, Src Port: 137, Dst Port: 59182
+NetBIOS Name Service
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 282.754103701  PcsCompu_c7:e1:36     PcsCompu_2e:e3:27     ARP      42     Who has 192.168.50.102? Tell 192.168.50.100
+
+Frame 12: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27)
+Address Resolution Protocol (request)
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 282.754812328  PcsCompu_2e:e3:27     PcsCompu_c7:e1:36     ARP      60     192.168.50.102 is at 08:00:27:2e:e3:27
+
+Frame 13: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_2e:e3:27 (08:00:27:2e:e3:27), Dst: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+Address Resolution Protocol (reply)
