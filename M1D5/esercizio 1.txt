@@ -1,0 +1,19 @@
+Un'azienda sta cercando di inviare un file di grandi dimensioni da un computer all'altro attraverso una rete.
+
+Passaggi:
+
+Livello fisico: il file viene suddiviso in pacchetti e poi spacchettato. I pacchetti vengono convertiti in segnali fisici che possono essere trasmessi attraverso cavi ethernet;
+
+Livello di collegamento dati: I segmenti di dati vengono incapsulati in frame che includono informazioni di controllo, come indirizzi fisici del mittente e del destinatario. A questo livello, vengono utilizzate tecniche di correzione degli errori per garantire l'integrità dei dati;
+
+Livello di rete: I frame vengono incapsulati in pacchetti e trasferiti tramite router;
+
+Livello di trasporto: I pacchetti vengono suddivisi in segmenti più piccoli e numerati per garantire la consegna ordinata passando tramite protocollo TCP;
+
+Livello di sessione: vengono utilizzati protocolli di sessione per coordinare la comunicazione e gestire eventuali interruzioni o errori;
+
+Livello di presentazione: il file viene crittografato, compresso e convertito in un formato compreso dal mittente e dal destinatario. Probabilmente verrà usata una cifratura simmetrica, a seconda della tipologia di file;
+
+Livello di applicazione: tramite protocollo FTP il file viene definitivamente trasmesso all'host ricevente;
+
+I dati poi viaggeranno dal destinatario al mittente seguendo lo stesso percorso inverso attraverso gli stessi strati riportando errori o gestendo le risposte.

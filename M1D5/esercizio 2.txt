@@ -1,0 +1,15 @@
+Livello fisico: Le telecamere acquisiscono le immagini e le convertono in segnali trasmessi tramite connessione wireless;
+
+Livello di data link: Le immagini vengono suddivise in frame che includono informazioni di controllo, come indirizzi MAC delle telecamere e del server di registrazione. I frame vengono incapsulati in pacchetti dati che possono essere trasmessi attraverso la rete;
+
+Livello di rete: I pacchetti dati vengono incapsulati in pacchetti IP che includono indirizzi IP delle telecamere e del server di registrazione.
+
+Livello di trasporto: I pacchetti IP vengono suddivisi in segmenti più piccoli. Viene utilizzato protocollo UDP, più veloce;
+
+Livello di sessione: Vengono stabiliti, mantenuti e terminati i collegamenti di sessione tra le telecamere e il server di registrazione;
+
+Livello di presentazione: Le immagini vengono convertite in un formato comune che può essere visualizzato e compreso dal server di registrazione. A questo livello, possono essere applicate operazioni di criptazione per ottimizzare la trasmissione delle immagini;
+
+Livello di applicazione: I dati delle immagini vengono incapsulati in pacchetti specifici dell'applicazione. A questo livello, il server di registrazione riceve i pacchetti, li elabora e li archivia per la successiva visualizzazione o analisi delle immagini.
+
+Attraverso questi livelli, le immagini vengono trasmesse in pacchetti dati dall'origine (telecamere) alla destinazione (server di registrazione) attraverso la rete IP.
