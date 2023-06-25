@@ -1,0 +1,48 @@
+#Kali
+
+┌──(kali㉿kali)-[~]
+└─$ touch calcoloarea.c 
+
+┌──(kali㉿kali)-[~]
+└─$ nano calcoloarea.c
+
+#Nano
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    double D;
+    printf("Inserisci un numero reale D: ");
+    scanf("%lf", &D);
+    
+    // Area del quadrato
+    double areaQuadrato = D * D;
+    printf("Area del quadrato: %.2lf\n", areaQuadrato);
+    
+    // Area del cerchio
+    double raggio = D / 2;
+    double areaCerchio = M_PI * pow(raggio, 2);
+    printf("Area del cerchio: %.2lf\n", areaCerchio);
+    
+    // Area del triangolo equilatero
+    double altezzaTriangolo = sqrt(3) / 2 * D;
+    double areaTriangolo = (D * altezzaTriangolo) / 2;
+    printf("Area del triangolo equilatero: %.2lf\n", areaTriangolo);
+    
+    return 0;
+}
+
+#Kali
+
+┌──(kali㉿kali)-[~]
+└─$ gcc calcoloarea.c -o calcoloarea -lm
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ ./calcoloarea
+Inserisci un numero reale D: 10
+Area del quadrato: 100.00
+Area del cerchio: 78.54
+Area del triangolo equilatero: 43.30
+
+
