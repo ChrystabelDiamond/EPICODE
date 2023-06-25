@@ -1,4 +1,4 @@
-#lanciare comando vi pippo#
+#lanciare comando vi pippo
 ┌──(kali㉿kali)-[~]
 └─$ vi pippo
 
