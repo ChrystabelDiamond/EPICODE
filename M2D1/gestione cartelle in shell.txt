@@ -1,0 +1,505 @@
+(kali㉿kali)-[~]
+└─$ mkdir dos studenti windows temp
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~]
+└─$ cd studenti    
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti]
+└─$ mkdir nicola anna matteo       
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti]
+└─$ cd nicola  
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola]
+└─$ mkdir scuola lavoro     
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola]
+└─$ cd ..    
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti]
+└─$ cd lavoro
+cd: no such file or directory: lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti]
+└─$ cd nicola
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola]
+└─$ cd lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd ..    
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola]
+└─$ cd ..
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti]
+└─$ cd anna
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/anna]
+└─$ mkdir casa         
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/anna]
+└─$ cd ..  
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti]
+└─$ cd matteo
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/matteo]
+└─$ mkdir amici
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/matteo]
+└─$ cd ..    
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti]
+└─$ cd nicola
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola]
+└─$ cd lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd lavoro nicola studenti anna casa
+cd: too many arguments
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ man cd                             
+No manual entry for cd
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd --help                          
+cd: no such file or directory: --help
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd lavoro/studenti/nicola/lavoro/anna/casa
+cd: no such file or directory: lavoro/studenti/nicola/lavoro/anna/casa
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd studenti/nicola/lavoro/anna/casa 
+cd: no such file or directory: studenti/nicola/lavoro/anna/casa
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd /nicola/studenti/anna/casa      
+cd: no such file or directory: /nicola/studenti/anna/casa
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd ../../../anna/casa        
+cd: no such file or directory: ../../../anna/casa
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ ls
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ pwd
+/home/kali/studenti/nicola/lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ ../../anna/casa
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/anna/casa]
+└─$ cd /home                     
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ /home/studenti/anna/casa                 
+zsh: no such file or directory: /home/studenti/anna/casa
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ ..                      
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ pwd
+/
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ ls
+bin  boot  dev  etc  home  initrd.img  initrd.img.old  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  srv  swapfile  sys  tmp  usr  var  vmlinuz  vmlinuz.old
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ cd /home
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ cd /home/studenti/nicola/lavoro
+cd: no such file or directory: /home/studenti/nicola/lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ pwd                  
+/home
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ /studenti/nicola/lavoro                  
+zsh: no such file or directory: /studenti/nicola/lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ cd /studenti/nicola/lavoro     
+cd: no such file or directory: /studenti/nicola/lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ pwd
+/home
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ cd studenti/nicola/lavoro          
+cd: no such file or directory: studenti/nicola/lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ cd studenti              
+cd: no such file or directory: studenti
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ ls
+kali
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ cd /home/studenti/nicola/lavoro
+cd: no such file or directory: /home/studenti/nicola/lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ ls
+kali
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ cd home                        
+cd: no such file or directory: home
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ ls
+kali
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ cd kali
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop  Documents  dos  Downloads  Music  Pictures  Public  studenti  temp  Templates  Videos  windows
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~]
+└─$ cd /studenti/nicola/lavoro     
+cd: no such file or directory: /studenti/nicola/lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~]
+└─$ cd studenti/nicola/lavoro 
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd studenti/nicola/lavoro
+cd: no such file or directory: studenti/nicola/lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd home/studenti/anna/casa
+cd: no such file or directory: home/studenti/anna/casa
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ ls
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ pwd
+/home/kali/studenti/nicola/lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ /home/kali/studenti/anna/casa
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/anna/casa]
+└─$ /home/kali/studenti/nicola/scuola
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/scuola]
+└─$ nano relazione.doc
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/scuola]
+└─$ nano compito.doc  
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/scuola]
+└─$ mv relazione.doc /home/kali/studenti/anna/casa
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/scuola]
+└─$ pwd
+/home/kali/studenti/nicola/scuola
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/scuola]
+└─$ /home/kali/studenti/anna/casa    
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/anna/casa]
+└─$ ls
+relazione.doc
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/anna/casa]
+└─$ dir /a                       
+dir: cannot access '/a': No such file or directory
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/anna/casa]
+└─$ ls -a   
+.  ..  relazione.doc
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/anna/casa]
+└─$ ls -ld
+drwxr-xr-x 2 kali kali 4096 Jun 21 20:06 .
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/anna/casa]
+└─$ cd home/studenti/nicola/scuola
+cd: no such file or directory: home/studenti/nicola/scuola
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/anna/casa]
+└─$ pwd
+/home/kali/studenti/anna/casa
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/anna/casa]
+└─$ cd /home/kali/studenti/nicola/scuola
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/scuola]
+└─$ ls -a 
+.  ..  compito.doc
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/scuola]
+└─$ ls -ld
+drwxr-xr-x 2 kali kali 4096 Jun 21 20:06 .
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/scuola]
+└─$ /home                        
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ ls -ld
+drwxr-xr-x 3 root root 4096 Mar 10 14:52 .
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ ls -la
+total 12
+drwxr-xr-x  3 root root 4096 Mar 10 14:52 .
+drwxr-xr-x 18 root root 4096 Mar 10 15:06 ..
+drwx------ 20 kali kali 4096 Jun 21 19:34 kali
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ ls    
+kali
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ pwd
+/home
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ cd ..                               
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ ls 
+bin  boot  dev  etc  home  initrd.img  initrd.img.old  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  srv  swapfile  sys  tmp  usr  var  vmlinuz  vmlinuz.old
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ rm tmp                             
+rm: cannot remove 'tmp': Is a directory
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ rmdir tmp
+rmdir: failed to remove 'tmp': Permission denied
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ sudo -rf /tmp                                          
+[sudo] password for kali: 
+sudo: /tmp: command not found
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ ls
+bin  boot  dev  etc  home  initrd.img  initrd.img.old  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  srv  swapfile  sys  tmp  usr  var  vmlinuz  vmlinuz.old
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ sudo -rf tmp 
+sudo: tmp: command not found
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ sudo rmdir tmp                          
+rmdir: failed to remove 'tmp': Directory not empty
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ cd tmp
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/tmp]
+└─$ ls
+ssh-XXXXXXYcHqv0                                                         systemd-private-d842c9ae0e4a4f86a30fe238261dc265-ModemManager.service-Cb1KVi
+systemd-private-d842c9ae0e4a4f86a30fe238261dc265-colord.service-BEridH   systemd-private-d842c9ae0e4a4f86a30fe238261dc265-systemd-logind.service-Uun1d2
+systemd-private-d842c9ae0e4a4f86a30fe238261dc265-haveged.service-Ck5pDz  systemd-private-d842c9ae0e4a4f86a30fe238261dc265-upower.service-f8UgxW
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/tmp]
+└─$ rm all   
+rm: cannot remove 'all': No such file or directory
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/tmp]
+└─$ rm -r tmp
+rm: cannot remove 'tmp': No such file or directory
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/tmp]
+└─$ cd .. 
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ rm -r tmp
+rm: cannot remove 'tmp/.XIM-unix': Operation not permitted
+rm: cannot remove 'tmp/.X11-unix/X0': Operation not permitted
+rm: descend into write-protected directory 'tmp/systemd-private-d842c9ae0e4a4f86a30fe238261dc265-upower.service-f8UgxW'?     
+rm: remove write-protected regular file 'tmp/.X0-lock'? 
+rm: cannot remove 'tmp/.font-unix': Operation not permitted
+rm: descend into write-protected directory 'tmp/systemd-private-d842c9ae0e4a4f86a30fe238261dc265-colord.service-BEridH'? 
+rm: descend into write-protected directory 'tmp/systemd-private-d842c9ae0e4a4f86a30fe238261dc265-ModemManager.service-Cb1KVi'? 
+rm: descend into write-protected directory 'tmp/systemd-private-d842c9ae0e4a4f86a30fe238261dc265-systemd-logind.service-Uun1d2'? 
+rm: cannot remove 'tmp/.ICE-unix': Operation not permitted
+rm: descend into write-protected directory 'tmp/systemd-private-d842c9ae0e4a4f86a30fe238261dc265-haveged.service-Ck5pDz'? 
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ ls
+bin  boot  dev  etc  home  initrd.img  initrd.img.old  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  srv  swapfile  sys  tmp  usr  var  vmlinuz  vmlinuz.old
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ sudo rmdir tmp
+rmdir: failed to remove 'tmp': Directory not empty
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ sudo rm -r tmp
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ ls
+bin  boot  dev  etc  home  initrd.img  initrd.img.old  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  srv  swapfile  sys  usr  var  vmlinuz  vmlinuz.old
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ cd home/studenti/nicola/scuola  
+cd: no such file or directory: home/studenti/nicola/scuola
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ pwd
+/
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ ls
+bin  boot  dev  etc  home  initrd.img  initrd.img.old  lib  lib32  lib64  libx32  lost+found  media  mnt  opt  proc  root  run  sbin  srv  swapfile  sys  usr  var  vmlinuz  vmlinuz.old
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/]
+└─$ /home/kali/studenti/nicola/lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ nano pippo.txt  
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ chmod 644 pippo.txt           
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ ls -l pippo.txt
+-rw-r--r-- 1 kali kali 11 Jun 21 20:22 pippo.txt
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ mv anna .anna                                 
+mv: cannot stat 'anna': No such file or directory
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ ls                 
+pippo.txt
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd ..                         
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola]
+└─$ ls
+lavoro  scuola
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola]
+└─$ cd ..                            
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti]
+└─$ cd ..
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop  Documents  dos  Downloads  Music  Pictures  Public  studenti  temp  Templates  Videos  windows
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~]
+└─$ cd/studenti/anna
+zsh: no such file or directory: cd/studenti/anna
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~]
+└─$ cd /studenti                        
+cd: no such file or directory: /studenti
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~]
+└─$ cd studenti              
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti]
+└─$ mv anna .anna
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti]
+└─$ /home/kali/studenti/nicola/lavoro
+
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ open . pippo.txt
+xdg-open: unexpected argument 'pippo.txt'
+Try 'xdg-open --help' for more information.
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd pippo.txt
+cd: not a directory: pippo.txt
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ la
+pippo.txt
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ ls
+pippo.txt
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ open .          
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd pippo.txt
+cd: not a directory: pippo.txt
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ la
+pippo.txt
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ ls
+pippo.txt
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cat pippo.txt   
+sono pippo
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ ls       
+pippo.txt
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ pwd
+/home/kali/studenti/nicola/lavoro
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ rmdir /home/kali/studenti/matteo/amici
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ rm -r /home/kali/*                    
+zsh: sure you want to delete all 12 files in /home/kali [yn]? n
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ home   
+Command 'home' not found, did you mean:
+  command 'hime' from deb hime
+  command 'hose' from deb netpipes
+Try: sudo apt install <deb name>
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ rm -r /home/kali/dos /home/kali/studenti home/kali/windows 
+rm: cannot remove 'home/kali/windows': No such file or directory
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ ls
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~/studenti/nicola/lavoro]
+└─$ cd /home                            
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ ls
+kali
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[/home]
+└─$ cd kali                             
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  temp  Templates  Videos  windows
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~]
+└─$ rmdir temp                                                 
+                                                                                                                                                                                                                
+┌──(kali㉿kali)-[~]
+└─$ 
