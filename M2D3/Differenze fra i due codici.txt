@@ -1,0 +1,11 @@
+Nel codice uno, la funzione menu() restituisce un intero che rappresenta la scelta dell'utente, mentre nel codice due, la scelta viene gestita direttamente nel blocco main() utilizzando un loop while e la variabile scelta.
+
+Nel codice uno, la funzione inserisci_nome() utilizza scanf("%s", ptr_nome) per leggere il nome dell'utente, mentre nel codice due viene utilizzata la funzione fgets(ptr_nome, 20, stdin) per leggere una linea intera di input, consentendo anche di gestire nomi più lunghi.
+
+Nel codice due, è stata aggiunta una logica per rimuovere il carattere di nuova riga ('\n') letto dalla funzione fgets() dalla fine della stringa del nome.
+
+Le funzioni domanda_uno() e domanda_due() nel codice uno restituiscono un intero, ma non viene utilizzato il valore restituito. Nel codice due, queste funzioni sono modificate in modo che non restituiscano un valore, ma lavorino direttamente sul puntatore punteggio_globale per aggiornare il punteggio.
+
+Nel codice due, è stata aggiunta una logica per gestire le risposte non valide dell'utente nelle funzioni domanda_uno() e domanda_due(). Viene utilizzata la funzione strchr() per controllare se la risposta è presente nell'array di opzioni valide.
+
+Nel codice due, sono state modificate le dimensioni degli array per il nome (nome[20]) e per le opzioni valide (opzioni_valide[]) nelle funzioni main(), domanda_uno() e domanda_due(). Inoltre, è stata aggiunta una chiamata a getchar() per consumare il carattere di nuova riga residuo prima di chiamare la funzione inserisci_nome().

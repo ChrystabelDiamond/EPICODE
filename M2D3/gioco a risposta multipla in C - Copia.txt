@@ -1,0 +1,92 @@
+#include <stdio.h>
+
+void presentazioni()
+{
+	printf("Gioco a risposta multipla\n");
+}
+
+int menu()
+{
+	char scelta = ' ';
+	
+	printf("\nMenu:\n");
+	printf("A) Nuova partita\n");
+	printf("B) Esci dal gioco\n");
+	printf("Scelta: ");
+	scanf(" %c", &scelta);
+	
+	if (scelta == 'A' || scelta == 'a') {
+		return 0;
+	} else {
+		return 1;
+	}
+}
+
+void inserisci_nome(char *ptr_nome)
+{
+	printf("Inserisci il tuo nome: ");
+	scanf("%s", ptr_nome);
+	printf("\nCiao, %s! Iniziamo la partita.\n", ptr_nome);
+}
+
+int domanda_uno(int *punteggio_globale)
+{
+	char scelta = ' ';
+	
+	printf("\nDi che colore è il sole?\n");
+	printf("A) Giallo\n");
+	printf("B) Blu\n");
+	printf("C) Verde\n");
+	printf("Risposta: ");
+	scanf(" %c", &scelta);
+	
+	if (scelta == 'A' || scelta == 'a') {
+		(*punteggio_globale)++;
+	}
+	
+	return 0;
+}
+
+int domanda_due(int *punteggio_globale)
+{
+	char scelta = ' ';
+	
+	printf("\nDi che colore è il mare?\n");
+	printf("A) Giallo\n");
+	printf("B) Blu\n");
+	printf("C) Verde\n");
+	printf("Risposta: ");
+	scanf(" %c", &scelta);
+	
+	if (scelta == 'B' || scelta == 'b') {
+		(*punteggio_globale)++;
+	}
+	
+	return 0;
+}
+
+int main()
+{
+	int scelta_continua_gioco = 0;
+	char nome[50];
+	int punteggio = 0;
+	
+	presentazioni();
+	
+	while (1) {
+		scelta_continua_gioco = menu();
+		
+		if (scelta_continua_gioco == 1) {
+			break;
+		}
+		
+		inserisci_nome(nome);
+		
+		domanda_uno(&punteggio);
+		domanda_due(&punteggio);
+		
+		printf("\nPunteggio totale: %d\n", punteggio);
+	}
+	
+	return 0;
+}

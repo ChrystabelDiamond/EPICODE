@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <string.h>
+
+void presentazioni()
+{
+    printf("Gioco a risposta multipla\n");
+}
+
+void inserisci_nome(char *ptr_nome)
+{
+    printf("Inserisci il tuo nome: ");
+    fgets(ptr_nome, 20, stdin);
+
+    // Rimuovi il carattere newline dalla fine della stringa
+    size_t len = strlen(ptr_nome);
+    if (len > 0 && ptr_nome[len - 1] == '\n') {
+        ptr_nome[len - 1] = '\0';
+    }
+
+    printf("\nCiao, %s! Iniziamo la partita.\n", ptr_nome);
+}
+
+void domanda_uno(int *punteggio_globale)
+{
+    char scelta;
+    char opzioni_valide[] = "ABCabc";
+    
+    printf("\nDi che colore è il sole?\n");
+    printf("A) Giallo\n");
+    printf("B) Blu\n");
+    printf("C) Verde\n");
+    printf("Risposta: ");
+    scanf(" %c", &scelta);
+    
+    while (strchr(opzioni_valide, scelta) == NULL) {
+        printf("Risposta non valida. Riprova: ");
+        scanf(" %c", &scelta);
+    }
+    
+    if (scelta == 'A' || scelta == 'a') {
+        (*punteggio_globale)++;
+    }
+}
+
+void domanda_due(int *punteggio_globale)
+{
+    char scelta;
+    char opzioni_valide[] = "ABCabc";
+    
+    printf("\nDi che colore è il mare?\n");
+    printf("A) Giallo\n");
+    printf("B) Blu\n");
+    printf("C) Verde\n");
+    printf("Risposta: ");
+    scanf(" %c", &scelta);
+    
+    while (strchr(opzioni_valide, scelta) == NULL) {
+        printf("Risposta non valida. Riprova: ");
+        scanf(" %c", &scelta);
+    }
+    
+    if (scelta == 'B' || scelta == 'b') {
+        (*punteggio_globale)++;
+    }
+}
+
+int main()
+{
+    presentazioni();
+
+    while (1) {
+        char scelta;
+        char opzioni_valide[] = "ABab";
+
+        printf("\nMenu:\n");
+        printf("A) Nuova partita\n");
+        printf("B) Esci dal gioco\n");
+        printf("Scelta: ");
+        scanf(" %c", &scelta);
+
+        while (strchr(opzioni_valide, scelta) == NULL) {
+            printf("Scelta non valida. Riprova: ");
+            while (getchar() != '\n') {
+                continue;
+            }
+            scanf(" %c", &scelta);
+        }
+
+        if (scelta == 'A' || scelta == 'a') {
+            char nome[20];
+            getchar(); // Consuma il carattere di nuova riga residuo
+            inserisci_nome(nome);
+
+            int punteggio = 0;
+            domanda_uno(&punteggio);
+            domanda_due(&punteggio);
+
+            printf("\nPunteggio totale: %d\n", punteggio);
+        } else {
+            break;
+        }
+    }
+
+    return 0;
+}
