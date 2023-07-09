@@ -1,0 +1,18 @@
+"""Scrivi una funzione che data in ingresso una lista A contenente n parole,
+restituisca in output una lista B di interi che rappresentano la lunghezza delle parole contenute in A"""
+
+list_A = ["zoe", "zola", "enzo"]
+
+def from_strings_to_int(input_list):
+    list_B = []
+
+    for word in input_list:
+        size_word = len(word)
+        list_B.append(size_word)
+
+    return list_B
+
+risultato = from_strings_to_int(list_A)
+
+print(list_A)
+print(risultato)
